@@ -1,15 +1,43 @@
 
 from flask_restful import Resource
+from flask import request
 import json
+from ..modelos import db,Orden, OrdenSchema
 
+
+orden_schema = OrdenSchema()
 
 class VistaGenerarOrdenVenta(Resource):
     
     def post(self):
+        code_error='0'
+        descripcion='OK'
+        numero_orden=''
+        flag=request.json["estado_recibir"]
+        if flag=='true':    
+          numero_orden='1'
+        
+        elif flag=='false':
+            nueva_orden = Orden(
+                tipoid = request.json["tipoid"],
+                identificacion = request.json["identificacion"],
+                nombre =request.json["nombre"],
+                direccion = request.json["direccion"],
+                telefono = request.json["telefono"],
+            )
+            db.session.add(nueva_orden)
+            db.session.commit()
+            orden_schema.dump(nueva_orden)
+            numero_orden=nueva_orden.id
+        else: 
+               code_error='2'
+               descripcion='Flag estado_recibir no esta definido'
 
-        respuesta ={
-            "cod_error":"0",
-            "descripcion":"OK"
-        }
+        return {'cod_error':code_error,'descripcion':descripcion,'numero_orden':numero_orden}
+            
+        
+        
+  
 
-        return json.dumps(respuesta)
+
+  
