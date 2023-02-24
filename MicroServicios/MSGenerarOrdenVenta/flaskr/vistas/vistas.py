@@ -3,6 +3,7 @@ from flask_restful import Resource
 from flask import request
 import json
 from ..modelos import db,Orden, OrdenSchema
+import requests
 
 
 orden_schema = OrdenSchema()
@@ -15,7 +16,22 @@ class VistaGenerarOrdenVenta(Resource):
         numero_orden=''
         flag=request.json["estado_recibir"]
         if flag=='true':    
-          numero_orden='1'
+          
+          datosRecibir= {
+            "tipoid":request.json["tipoid"],
+            "identificacion":request.json["identificacion"],
+            "nombre":request.json["nombre"],
+            "direccion":request.json["direccion"],
+            "telefono":request.json["telefono"],
+            "estado_recibir":request.json["estado_recibir"]
+            
+           }
+          
+          response = requests.post('http://127.0.0.1:5001/orden/recibir',json=datosRecibir,headers={"Content-Type": "application/json"},)
+
+          print(response.text)
+          return response.json()
+          
         
         elif flag=='false':
             nueva_orden = Orden(
