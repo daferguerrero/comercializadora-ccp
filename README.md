@@ -32,7 +32,7 @@
 2. Ejecutar el comando **pip install -r requirements.txt**
 3. Ejecutar **cd flaskr**
 4. Ejecutar **flask run -p 5000**
-5. Endpoint API http://127.0.0.1:5001/orden/generar
+5. Endpoint API http://127.0.0.1:5000/orden/generar
 6. Request: 
      {
  "tipoid":"CC",
@@ -55,7 +55,7 @@
  
  **Prueba al Microservicio Generar Orden Venta**
  
- 1. Colocar el siguiente archico .jmx del archivo .zip y colocarlo en la ruta **apache-jmeter-5.5\bin**
+ 1. Colocar el siguiente archivo .jmx del archivo .zip y colocarlo en la ruta **apache-jmeter-5.5\bin**
   **GenerarOrden.jmx** [GenerarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/10829024/GenerarOrden.zip)
  2. Ejecutar Jmeter
  3. Abrir archivo **GenerarOrden.jmx**
