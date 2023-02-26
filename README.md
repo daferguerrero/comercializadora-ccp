@@ -6,12 +6,14 @@
 
 - Microservicio **Recibir Orden Venta**
 
-1. Ubicarse en el directorio **Arquitecturas Agiles de Software\Proyecto\Experimento1\Arquitecturas-g3-qrm\MicroServicios\MSRecibirOrdenVenta**
-2. Ejecutar el comando **pip install -r requirements.txt**
-3. Ejecutar **cd flaskr**
-4. Ejecutar **flask run -p 5001**
-5. Endpoint API http://127.0.0.1:5001/orden/recibir
-6. Request: 
+1. Ubicarse en el directorio **Arquitecturas-g3-qrm\MicroServicios\MSRecibirOrdenVenta**
+2. Crear directorio virtual **python3 -m venv venv**
+3 Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
+4. Ejecutar el comando **pip install -r requirements.txt**
+5. Ejecutar **cd flaskr**
+6. Ejecutar **flask run -p 5001**
+7. Endpoint API http://127.0.0.1:5001/orden/recibir
+8. Request: 
       {
      "tipoid":"CC",
      "identificacion":"123456",
@@ -19,7 +21,7 @@
      "direccion":"Clle 89",
      "telefono":"3102589635"
     }
- 7. Response: 
+ 9. Response: 
     {
         "cod_error": "0",
         "descripcion": "OK",
@@ -28,12 +30,14 @@
 
 - Microservicio **Generar Orden Venta**
 
-1. Ubicarse en el directorio **Arquitecturas Agiles de Software\Proyecto\Experimento1\Arquitecturas-g3-qrm\MicroServicios\MSGenerarOrdenVenta**
-2. Ejecutar el comando **pip install -r requirements.txt**
-3. Ejecutar **cd flaskr**
-4. Ejecutar **flask run -p 5000**
-5. Endpoint API http://127.0.0.1:5000/orden/generar
-6. Request: 
+1. Ubicarse en el directorio **Arquitecturas-g3-qrm\MicroServicios\MSGenerarOrdenVenta**
+2. Crear directorio virtual **python3 -m venv venv**
+3 Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
+4. Ejecutar el comando **pip install -r requirements.txt**
+5. Ejecutar **cd flaskr**
+6. Ejecutar **flask run -p 5000**
+7. Endpoint API http://127.0.0.1:5000/orden/generar
+8. Request: 
      {
  "tipoid":"CC",
      "identificacion":"123456",
@@ -43,7 +47,7 @@
      "estado_recibir":"false"
 
     }
- 7. Response: 
+ 9. Response: 
     {
         "cod_error": "0",
         "descripcion": "OK",
