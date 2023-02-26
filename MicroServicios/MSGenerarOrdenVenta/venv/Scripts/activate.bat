@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\UniAndes\Semestre II\Arquitecturas Agiles de Software\Proyecto\Experimento1\Arquitecturas-g3-qrm\MicroServicios\MSGenerarOrdenVenta\venv
+set VIRTUAL_ENV=G:\Carpetas PC\Documents\MISO\03_Arquitecturas_ágiles_de_software\Proyecto\Arquitecturas-g3-qrm\MicroServicios\MSGenerarOrdenVenta\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
