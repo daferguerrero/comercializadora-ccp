@@ -4,7 +4,7 @@
 **Instrucciones para la ejecución de los diferentes servicios**
 
 
-- Microservicio **Recibir Orden Venta**
+- **Microservicio Recibir Orden Venta**
 
 1. Ubicarse en el directorio **Arquitecturas-g3-qrm\MicroServicios\MSRecibirOrdenVenta**
 2. Crear directorio virtual **python3 -m venv venv**
@@ -28,7 +28,7 @@
         "numero_orden": 1
     }
 
-- Microservicio **Generar Orden Venta**
+- **Microservicio Generar Orden Venta**
 
 1. Ubicarse en el directorio **Arquitecturas-g3-qrm\MicroServicios\MSGenerarOrdenVenta**
 2. Crear directorio virtual **python3 -m venv venv**
