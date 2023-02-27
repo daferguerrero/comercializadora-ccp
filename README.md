@@ -53,7 +53,32 @@
         "descripcion": "OK",
         "numero_orden": 1
     }
-    
+
+- **API Gateway**
+
+1. Ubicarse en el directorio **Arquitecturas-g3-qrm\Api\MSGenerarOrdenVenta**
+2. Crear directorio virtual **python3 -m venv venv**
+3 Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
+4. Ejecutar el comando **pip3 install -r requirements.txt**
+5. Ejecutar **cd flaskr**
+6. Ejecutar **flask run -p 5000**
+7. Endpoint API http://127.0.0.1:5000/orden/generar
+8. Request: 
+     {
+ "tipoid":"CC",
+     "identificacion":"123456",
+     "nombre":"Cliente 1",
+     "direccion":"Clle 89",
+     "telefono":"3102589635",
+     "estado_recibir":"false"
+
+    }
+ 9. Response: 
+    {
+        "cod_error": "0",
+        "descripcion": "OK",
+        "numero_orden": 1
+    }
     
  - **Archivo Jmeter**
  
