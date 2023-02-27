@@ -56,7 +56,7 @@
 
 - **API Gateway**
 
-1. Ubicarse en el directorio **Arquitecturas-g3-qrm\Api\MSGenerarOrdenVenta**
+1. Ubicarse en el directorio **Arquitecturas-g3-qrm\ApiGateway\MSGenerarOrdenVenta**
 2. Crear directorio virtual **python3 -m venv venv**
 3 Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
 4. Ejecutar el comando **pip3 install -r requirements.txt**
