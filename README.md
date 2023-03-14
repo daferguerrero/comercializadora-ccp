@@ -102,5 +102,39 @@
 ***
 **2. Experimento Seguridad**
 ****
- 
-    
+
+- **Componente Autorizador**
+
+ 1. Ubicarse en el directorio **Arquitecturas-g3-qrm\Autorizador**
+2. Crear directorio virtual **python3 -m venv venv**
+3. Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
+4. Ejecutar el comando **pip3 install -r requirements.txt**
+5. Ejecutar **flask run -p 5001**
+7. Endpoint POST API Generar Token http://127.0.0.1:5001/token/generar
+      7.1. Request: 
+            {
+                "usuario":"cpp_reparto",
+                "apikey":"prueba"
+
+            }
+       7.2. Response: 
+         {
+                "msg": "Generación de token exitosa",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA"
+            }
+            
+8. Endpoint POST API Validar Token http://127.0.0.1:5001/token/validar
+      8.1. 
+      En el encabezado enviar el token así:
+      Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA
+     
+     Request: 
+            {
+           
+          }
+       8.2. Response: 
+          
+            {
+                "msg": "OK"
+            }
+
