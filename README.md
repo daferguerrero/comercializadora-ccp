@@ -3,6 +3,9 @@
 
 **Instrucciones para la ejecución de los diferentes servicios**
 
+***
+**1. Experimento Disponibilidad**
+****
 
 - **Microservicio Recibir Orden Venta**
 
@@ -96,5 +99,32 @@
  ![image](https://user-images.githubusercontent.com/20029761/221299584-0689bf16-f98e-4372-bf14-afde3945857e.png)
 
 
+***
+**2. Experimento Seguridad**
+****
+
+- **Componente Autorizador**
+
+ 1. Ubicarse en el directorio **Arquitecturas-g3-qrm\Autorizador**
+2. Crear directorio virtual **python3 -m venv venv**
+3. Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
+4. Ejecutar el comando **pip3 install -r requirements.txt**
+5. Ejecutar **flask run -p 5001**
+7. Endpoint POST API Generar Token http://127.0.0.1:5001/token/generar
+8. Request: {"usuario":"cpp_reparto", "apikey":"prueba"}
+9.Response: 
+         {
+            "msg": "Generación de token exitosa",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA"
+            }
  
-    
+10. Endpoint POST API Validar Token http://127.0.0.1:5001/token/validar
+11. Request: {}
+    En el encabezado enviar el token así:
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA
+12. Response:         
+            {
+                "msg": "OK"
+            } 
+
+ 
