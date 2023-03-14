@@ -9,7 +9,7 @@ class VistaGenerarToken(Resource):
      usuario=request.json["usuario"]
      apikey=request.json["apikey"]
      token_de_acceso = create_access_token(identity=usuario)
-     return {"mensaje": "Generación de token exitosa", "token": token_de_acceso}
+     return {"msg": "Generación de token exitosa", "token": token_de_acceso}
     
 class VistaValidarToken(Resource):
     @jwt_required()
