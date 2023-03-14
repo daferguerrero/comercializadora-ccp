@@ -3,6 +3,9 @@
 
 **Instrucciones para la ejecución de los diferentes servicios**
 
+***
+**1. Experimento Disponibilidad**
+****
 
 - **Microservicio Recibir Orden Venta**
 
@@ -96,5 +99,8 @@
  ![image](https://user-images.githubusercontent.com/20029761/221299584-0689bf16-f98e-4372-bf14-afde3945857e.png)
 
 
+***
+**2. Experimento Seguridad**
+****
  
     
