@@ -26,7 +26,7 @@ class VistaAPIGenerarOrdenVenta(Resource):
 
 class VistaAPISolicitarToken(Resource):
 
-    def put(self):
+    def post(self):
 
         datosRecibir = {
             "usuario":request.json["usuario"],
