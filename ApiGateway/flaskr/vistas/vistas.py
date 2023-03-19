@@ -23,6 +23,17 @@ class VistaAPIGenerarOrdenVenta(Resource):
 
         print(response.text)
         return response.json()
-    
-    
-        
+
+class VistaAPISolicitarToken(Resource):
+
+    def put(self):
+
+        datosRecibir = {
+            "usuario":request.json["usuario"],
+            "contrasena":request.json["contrasena"]
+        }
+
+        response = requests.post('http://127.0.0.1:5001/token/validar',json=datosRecibir,headers={"Content-Type": "applicatiuon/json"})
+
+        print(response.text)
+        return response.json()
