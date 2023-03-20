@@ -184,7 +184,7 @@
 2. Ejecutar Jmeter
 3. Abrir archivo **ModificarOrden.jmx**
 
-![image](https://user-images.githubusercontent.com/98714375/226243059-fca8379f-c7b6-4c68-8cb4-ff999dc2c0c3.png)
+![image](https://user-images.githubusercontent.com/98714375/226247501-e2289fb9-7824-4565-81c0-f5c14a79f86f.png)
 ![image](https://user-images.githubusercontent.com/98714375/226243108-cf27cb78-ccef-4f7b-97ec-24565e836cfd.png)
 
 4. Ejecutar escenario Modificar Orden Reparto con token inválido
