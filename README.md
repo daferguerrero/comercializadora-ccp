@@ -178,11 +178,11 @@
 
 4. Ejecutar escenario Modificar Orden Reparto con token inválido
 
-![image](https://user-images.githubusercontent.com/98714375/226246675-997d007c-c7ec-416b-a841-aa6847e80297.png)
+![image](https://user-images.githubusercontent.com/98714375/226246810-ada4ffb8-f613-423e-853a-eb456599cfe9.png)
 
 5. Ejecutar escenario Modificar Orden Reaprto con token expirado
 
-![image](https://user-images.githubusercontent.com/98714375/226246567-c0b1f9c9-7d26-43bb-b215-e09d5f15de54.png)
+![image](https://user-images.githubusercontent.com/98714375/226246847-e24bb6c7-cb57-48ad-82be-def952a7138b.png)
 
 6. Ejecutar escenario Modificar Orden Reparto con token válido
 
