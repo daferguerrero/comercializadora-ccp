@@ -144,7 +144,7 @@
  
 **Prueba al Microservicio Modificar Orden Reparto**
  
-1. Extraer el archivo **ModificarOrden.jmx** del siguiente .zip [ModificarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11013194/ModificarOrden.zip)
+1. Extraer el archivo **ModificarOrden.jmx** del siguiente .zip [ModificarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11013559/ModificarOrden.zip)
 y colocarlo en la ruta **apache-jmeter-5.5\bin**   
 2. Ejecutar Jmeter
 3. Abrir archivo **ModificarOrden.jmx**
