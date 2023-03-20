@@ -188,14 +188,14 @@
 ![image](https://user-images.githubusercontent.com/98714375/226247501-e2289fb9-7824-4565-81c0-f5c14a79f86f.png)
 ![image](https://user-images.githubusercontent.com/98714375/226243108-cf27cb78-ccef-4f7b-97ec-24565e836cfd.png)
 
-4. Ejecutar escenario Modificar Orden Reparto con token inválido
+5. Ejecutar escenario Modificar Orden Reparto con token inválido
 
 ![image](https://user-images.githubusercontent.com/98714375/226246810-ada4ffb8-f613-423e-853a-eb456599cfe9.png)
 
-5. Ejecutar escenario Modificar Orden Reaprto con token expirado
+6. Ejecutar escenario Modificar Orden Reaprto con token expirado
 
 ![image](https://user-images.githubusercontent.com/98714375/226246847-e24bb6c7-cb57-48ad-82be-def952a7138b.png)
 
-6. Ejecutar escenario Modificar Orden Reparto con token válido
+7. Ejecutar escenario Modificar Orden Reparto con token válido
 
 ![image](https://user-images.githubusercontent.com/98714375/226246699-5dcb4523-c7fe-43d3-96b7-7e2d41d89ee7.png)
