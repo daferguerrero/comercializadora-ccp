@@ -136,7 +136,21 @@
     {
       "msg":"Generación de token exitosa","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA"
     }
-    
+9. Segundo Endpoint API (Modificar orden con validación de token) http://127.0.0.1:50000/orden_reparto/modificar
+10. Request:
+     {
+"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3OTI2MDkwNSwianRpIjoiYzA2ODZmMTUtYzZlNi00ODRjLWJkYWUtNjg1MzU0MDFiMzIyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc5MjYwOTA1LCJleHAiOjE2NzkyNjA5NjV9.vn3rRy2LkOe-zNqbl77a33H7hP2t5HRrnK5oy_vtC_s",
+    "nombre_cliente": "Fernando Aragón",
+    "direccion_entrega": "Carrera 5 # 3 - 45",
+    "telefono": "6015214789"
+     }
+11. Response:
+     {
+    "direccion_entrega": "Carrera 5 # 3 - 45",
+    "nombre_cliente": "Fernando Aragón",
+    "id": 1,
+    "telefono": "6015214789"
+     }
     
 - **Microservicio Modificar Orden Reparto**
 
