@@ -125,8 +125,8 @@
 3 Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
 4. Ejecutar el comando **pip3 install -r requirements.txt**
 5. Ejecutar **cd flaskr**
-6. Ejecutar **flask run -p 5002**
-7. Primer Endpoint API (Generar token) http://127.0.0.1:5002/token/generar
+6. Ejecutar **flask run -p 5000**
+7. Primer Endpoint API (Generar token) http://127.0.0.1:5000/token/generar
 8. Request: 
      {
       "tipoid":"CC",
@@ -151,10 +151,3 @@ y colocarlo en la ruta **apache-jmeter-5.5\bin**
 
  ![image](https://user-images.githubusercontent.com/98714375/226243059-fca8379f-c7b6-4c68-8cb4-ff999dc2c0c3.png)
 ![image](https://user-images.githubusercontent.com/98714375/226243108-cf27cb78-ccef-4f7b-97ec-24565e836cfd.png)
-
-4. Ejecutar escenario Modificar orden con token inválido
-
-![image](https://user-images.githubusercontent.com/98714375/226243920-d98f924e-0c79-4011-b5f3-864a1f503f5b.png)
-
-6. Ejecutar escenario Modificar orden con token expirado
-7. Ejecutar escenario Modificar orden con token válido
