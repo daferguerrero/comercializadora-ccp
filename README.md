@@ -175,3 +175,15 @@
 
 ![image](https://user-images.githubusercontent.com/98714375/226243059-fca8379f-c7b6-4c68-8cb4-ff999dc2c0c3.png)
 ![image](https://user-images.githubusercontent.com/98714375/226243108-cf27cb78-ccef-4f7b-97ec-24565e836cfd.png)
+
+4. Ejecutar escenario Modificar Orden Reparto con token inválido
+
+![image](https://user-images.githubusercontent.com/98714375/226246675-997d007c-c7ec-416b-a841-aa6847e80297.png)
+
+5. Ejecutar escenario Modificar Orden Reaprto con token expirado
+
+![image](https://user-images.githubusercontent.com/98714375/226246567-c0b1f9c9-7d26-43bb-b215-e09d5f15de54.png)
+
+6. Ejecutar escenario Modificar Orden Reparto con token válido
+
+![image](https://user-images.githubusercontent.com/98714375/226246699-5dcb4523-c7fe-43d3-96b7-7e2d41d89ee7.png)
