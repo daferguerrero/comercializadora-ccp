@@ -118,6 +118,28 @@
 12. En el encabezado enviar el token así: **Authorization** : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA
 13. Response: {"msg": "OK"}
 
+- **API Gateway**
+
+1. Ubicarse en el directorio **Arquitecturas-g3-qrm\ApiGateway**
+2. Crear directorio virtual **python3 -m venv venv**
+3 Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
+4. Ejecutar el comando **pip3 install -r requirements.txt**
+5. Ejecutar **cd flaskr**
+6. Ejecutar **flask run -p 5002**
+7. Primer Endpoint API (Generar token) http://127.0.0.1:5002/token/generar
+8. Request: 
+     {
+      "tipoid":"CC",
+      "identificacion":"123456",
+      "nombre":"Cliente 1",
+      "direccion":"Clle 89",
+      "telefono":"3102589635"
+    }
+ 9. Response: 
+    {
+      "msg":"Generación de token exitosa","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA"
+    }
+
 - **Archivo JMeter**
  
 **Prueba al Microservicio Modificar Orden Reparto**
