@@ -85,7 +85,7 @@
  
  1. Extraer el archivo **GenerarOrden.jmx** del siguiente .zip [GenerarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/10829024/GenerarOrden.zip) y colocarlo en la ruta **apache-jmeter-5.5\bin**
    
- 2. Ejecutar Jmeter
+ 2. Ejecutar JMeter
  3. Abrir archivo **GenerarOrden.jmx**
  
  ![image](https://user-images.githubusercontent.com/20029761/221299313-7cbc92f5-bcf6-4c1c-b70b-20ecb3057cdb.png)
@@ -182,7 +182,7 @@
  
 1. Extraer el archivo **ModificarOrden.jmx** del siguiente .zip [ModificarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11013194/ModificarOrden.zip) y colocarlo en la ruta **apache-jmeter-5.5\bin**
 2. Extraer el archivo **DatosOrdenesReparto.csv** del siguiente .zip [DatosOrdenesReparto.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11014399/DatosOrdenesReparto.zip) y colocarlo en la ruta **apache-jmeter-5.5\bin**
-3. Ejecutar Jmeter
+3. Ejecutar JMeter
 4. Abrir archivo **ModificarOrden.jmx**
 
 ![image](https://user-images.githubusercontent.com/98714375/226247501-e2289fb9-7824-4565-81c0-f5c14a79f86f.png)
