@@ -38,7 +38,7 @@ class VistaAPIModificarOrdenReparto(Resource):
         response = requests.post('http://127.0.0.1:5001/token/validar',headers={"Content-Type": "application/json", "Authorization": "Bearer " + request.json["token"]})
         if response.json()["msg"] == "OK":
             ##return request.json
-            response = requests.put('http://127.0.0.1:5000/orden_reparto/modificar/' + str(id_orden), headers={"Content-Type": "application/json"}, json=request.json)
+            response = requests.put('http://127.0.0.1:5002/orden_reparto/modificar/' + str(id_orden), headers={"Content-Type": "application/json"}, json=request.json)
             return response.json()
         else:
             return {
