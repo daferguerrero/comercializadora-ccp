@@ -79,7 +79,7 @@
       "numero_orden": 1
     }
     
- - **Archivo Jmeter**
+ - **Archivo JMeter**
  
  **Prueba al Microservicio Generar Orden Venta**
  
@@ -118,7 +118,7 @@
 12. En el encabezado enviar el token así: **Authorization** : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA
 13. Response: {"msg": "OK"}
 
-- **Archivo Jmeter**
+- **Archivo JMeter**
  
 **Prueba al Microservicio Modificar Orden Reparto**
  
