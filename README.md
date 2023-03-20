@@ -126,15 +126,12 @@
 4. Ejecutar el comando **pip3 install -r requirements.txt**
 5. Ejecutar **cd flaskr**
 6. Ejecutar **flask run -p 5002**
-7. Primer Endpoint API (Generar token) http://127.0.0.1:5002/token/generar
-8. Request: 
-     {
-      "tipoid":"CC",
-      "identificacion":"123456",
-      "nombre":"Cliente 1",
-      "direccion":"Clle 89",
-      "telefono":"3102589635"
-    }
+7. Primer Endpoint API (Generar token) http://127.0.0.1:5000/token/generar
+8. Headers:
+**apiKey**: IPE56EOqtwRFeo7TCh6AQyimpqcPY0DIRxZFoni4OIPQ5DklmpCh4R3ocf1GP4hz
+**user**: cpp_reparto
+9. Request: 
+     {}
  9. Response: 
     {
       "msg":"Generación de token exitosa","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA"
