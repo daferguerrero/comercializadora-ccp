@@ -118,11 +118,11 @@
 12. En el encabezado enviar el token así: **Authorization** : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA
 13. Response: {"msg": "OK"}
 
- - **Archivo Jmeter**
+- **Archivo Jmeter**
  
- **Prueba al Microservicio Generar Orden Venta**
+**Prueba al Microservicio Modificar Orden Reparto**
  
- 1. Extraer el archivo **ModificarOrden.jmx** del siguiente .zip [GenerarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/10829024/GenerarOrden.zip) y colocarlo en la ruta **apache-jmeter-5.5\bin**
-   
- 2. Ejecutar Jmeter
- 3. Abrir archivo **GenerarOrden.jmx**
+1. Extraer el archivo **ModificarOrden.jmx** del siguiente .zip [ModificarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11013194/ModificarOrden.zip)
+y colocarlo en la ruta **apache-jmeter-5.5\bin**   
+2. Ejecutar Jmeter
+3. Abrir archivo **ModificarOrden.jmx**
