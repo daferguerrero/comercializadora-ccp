@@ -180,9 +180,10 @@
  
 **Prueba al Microservicio Modificar Orden Reparto**
  
-1. Extraer el archivo **ModificarOrden.jmx** del siguiente .zip [ModificarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11013194/ModificarOrden.zip) y colocarlo en la ruta **apache-jmeter-5.5\bin**   
-2. Ejecutar Jmeter
-3. Abrir archivo **ModificarOrden.jmx**
+1. Extraer el archivo **ModificarOrden.jmx** del siguiente .zip [ModificarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11013194/ModificarOrden.zip) y colocarlo en la ruta **apache-jmeter-5.5\bin**
+2. Extraer el archivo **DatosOrdenesReparto.csv** del siguiente .zip [DatosOrdenesReparto.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11014399/DatosOrdenesReparto.zip) y colocarlo en la ruta **apache-jmeter-5.5\bin**
+3. Ejecutar Jmeter
+4. Abrir archivo **ModificarOrden.jmx**
 
 ![image](https://user-images.githubusercontent.com/98714375/226247501-e2289fb9-7824-4565-81c0-f5c14a79f86f.png)
 ![image](https://user-images.githubusercontent.com/98714375/226243108-cf27cb78-ccef-4f7b-97ec-24565e836cfd.png)
