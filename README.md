@@ -125,8 +125,8 @@
 3 Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
 4. Ejecutar el comando **pip3 install -r requirements.txt**
 5. Ejecutar **cd flaskr**
-6. Ejecutar **flask run -p 5000**
-7. Primer Endpoint API (Generar token) http://127.0.0.1:5000/token/generar
+6. Ejecutar **flask run -p 5002**
+7. Primer Endpoint API (Generar token) http://127.0.0.1:5002/token/generar
 8. Request: 
      {
       "tipoid":"CC",
@@ -139,23 +139,39 @@
     {
       "msg":"Generación de token exitosa","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3ODc3MTM0MiwianRpIjoiZDQ2YjM3NTQtMzlkYi00NWJjLTliM2YtMGI4ZWI3ODlhNDU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImNwcF9yZXBhcnRvIiwibmJmIjoxNjc4NzcxMzQyLCJleHAiOjE2Nzg3NzE0MDJ9.kF59lsYsfaQVOFGeLGC8hrRQwrGCEwb2Dos6pJ3USbA"
     }
+    
+    
+- **Microservicio Modificar Orden Reparto**
+
+1. Ubicarse en el directorio **Arquitecturas-g3-qrm\MicroServicios\MSModificarOrdenReparto**
+2. Crear directorio virtual **python3 -m venv venv**
+3. Activar Ambiente Virtual(Windows) **.\venv\Scripts\activate**
+4. Ejecutar el comando **pip3 install -r requirements.txt**
+5. Ejecutar **cd flaskr**
+6. Ejecutar **flask run -p 5002**
+7. Endpoint API http://127.0.0.1:5002/orden_reparto/modificar/5
+8. Request: 
+     {
+         "nombre_cliente": "Antonio",
+         "direccion_entrega": "Calle 5 #~1A",
+         "telefono": "123"
+     }
+ 9. Response: 
+     {
+         "direccion_entrega": "Calle 5 #~1A",
+         "telefono": "123",
+         "nombre_cliente": "Antonio",
+         "id": 5
+     }
+
 
 - **Archivo JMeter**
  
 **Prueba al Microservicio Modificar Orden Reparto**
  
-1. Extraer el archivo **ModificarOrden.jmx** del siguiente .zip [ModificarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11013559/ModificarOrden.zip)
-y colocarlo en la ruta **apache-jmeter-5.5\bin**   
+1. Extraer el archivo **ModificarOrden.jmx** del siguiente .zip [ModificarOrden.zip](https://github.com/neztoring/Arquitecturas-g3-qrm/files/11013194/ModificarOrden.zip) y colocarlo en la ruta **apache-jmeter-5.5\bin**   
 2. Ejecutar Jmeter
 3. Abrir archivo **ModificarOrden.jmx**
 
- ![image](https://user-images.githubusercontent.com/98714375/226243059-fca8379f-c7b6-4c68-8cb4-ff999dc2c0c3.png)
+![image](https://user-images.githubusercontent.com/98714375/226243059-fca8379f-c7b6-4c68-8cb4-ff999dc2c0c3.png)
 ![image](https://user-images.githubusercontent.com/98714375/226243108-cf27cb78-ccef-4f7b-97ec-24565e836cfd.png)
-
-
-4. Ejecutar escenario Modificar orden con token inválido
-
-![image](https://user-images.githubusercontent.com/98714375/226243920-d98f924e-0c79-4011-b5f3-864a1f503f5b.png)
-
-6. Ejecutar escenario Modificar orden con token expirado
-7. Ejecutar escenario Modificar orden con token válido
